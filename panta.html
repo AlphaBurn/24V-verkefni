@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new.css Demo</title>
+    <meta name="description" content="A classless CSS framework to write modern websites using only HTML.">
+    <meta name="keywords" content="newcss,new.css,css,xz,css framework,classless css,xz.style">
+    <meta property="og:title" content="new.css">
+    <meta property="og:description" content="A classless CSS framework to write modern websites using only HTML.">
+    <meta property="og:url" content="https://newcss.net">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://newcss.net/_assets/og.png">
+    <script src="https://kit.fontawesome.com/dada9038a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/new.css">
+    <link rel="stylesheet" href="css/mitt.css">
+    <link rel="stylesheet" href="css/topmenu.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/icon-font.css">
+    <link rel="stylesheet" href="css/popup.css">
+</head>
+<body style="background-image: linear-gradient(rgb(112, 208, 233), white);">
+    <section class="topnav">
+        <a href="index.html" class="logo"><h2><span class="logo-container"><i class="icon-carlogo"></i></span><span class="text-animation"><span :nth-child>Ö</span><span>k</span><span>u</span><span>k</span><span>e</span><span>n</span><span>n</span><span>s</span><span>l</span><span>a</span></span></h2></a>
+        <nav>
+            <input type="checkbox" id="toggle" class="menuInput">
+            <label for="toggle" class="menuLabel"><span class="fa-solid fa-house"></span></label>
+            <div class="topmenu">
+                <a href="index.html" class="fadein-fromtop"><span class="fa-solid fa-house"></span> Heim</a>
+                <a href="okukennari.html" class="fadein-fromtop"><span class="fa-solid fa-face-smile"></span> Ökukennarinn</a>
+                <a href="aksturmat.html" class="fadein-fromtop"><span class="fa-solid fa-star"></span> Akstursmat</a>
+                <a href="panta.html" class="fadein-fromtop"><span class="fa-solid fa-cart-shopping"></span> Panta tíma</a>
+                <a href="#contact" class="fadein-fromtop"><span class="fa-solid fa-address-book"></span> Hafa samband</a>
+            </div>
+        </nav>
+    </section>
+    <br>
+    <br>
+    <form style="background-image: linear-gradient(rgb(112, 208, 233), white);">
+        <fieldset class="fieldset" style="background-color: white;">
+            <legend class="bold-title">Bókaðu Ökutíma</legend>
+            <p>
+                <label>Fullt Nafn</label><br>
+                <input type="text" name="full_name" required="" placeholder="Sláðu inn fullt nafn">
+            </p>
+            <p>
+                <label>Tölvupóstur</label><br>
+                <input type="email" name="email" required="" placeholder="dæmi@domain.com">
+            </p>
+            <p>
+                <label>Símanúmer</label><br>
+                <input type="tel" name="phone" placeholder="Þitt símanúmer">
+            </p>
+            <span class="col-2">
+                <p>
+                    <label>Óskadagsetning</label><br>
+                    <input type="date" name="preferred_date" required="">
+                </p>
+                <p>
+                    <label>Óskatími</label><br>
+                    <input type="time" name="preferred_time" required="">
+                </p>
+            </span>
+            <p>
+                <label>Tegund Tíma</label><br>
+                <select name="lesson_type">
+                    <option value="beginner">Byrjandi</option>
+                    <option value="intermediate">Millistig</option>
+                    <option value="advanced">Framhaldsstig</option>
+                    <option value="refresher">Upprifjunarnámskeið</option>
+                </select>
+            </p>
+            <span class="col-2">
+                <p>
+                    <label>Gírkassi</label><br>
+                    <label>
+                        <input type="radio" name="transmission_type" value="Automatic">
+                        Sjálfskiptur
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="transmission_type" value="Manual">
+                        Beinskiptur
+                    </label>
+                </p>
+                <p>
+                    <label>Viðbótartjónusta</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="service" value="Parking">
+                        Bílastæðatækni
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="service" value="Highway">
+                        Akstur á hraðbraut
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="service" value="Night">
+                        Náttaakstur
+                    </label>
+                </p>
+            </span>
+            <p id="comments">
+                <label>Athugasemdir</label><br>
+                <textarea name="comments" placeholder="Eitthvað sérstakt sem þú vilt nefna?"></textarea>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" name="terms" required="">
+                    Ég samþykki <a href="#">skilmála og skilyrði</a>
+                </label>
+            </p>
+            <p>
+                <button type="submit">Bóka Ökutíma</button>
+                <button type="reset">Endurstilla Form</button>
+            </p>
+        </fieldset>
+    </form>
+    
+    
+    <br>
+
+    <script async defer src="https://api.newcss.net/latest.js"></script>
+    <noscript><img src="https://api.newcss.net/noscript.gif" alt=""></noscript>
+    <footer id="contact" class="footer-grid">
+        <h4><span class="icon-carlogo"></span>Ökukennsla</h4>
+        <div class="icon-decorations">
+            <a href="https://facebook.com"><span class="icon-facebook-icon"></span></a>
+            <a href="https://youtube.com"><span class="icon-youtube-icon"></span></a>
+            <a href="mailto:jonjonsson@okukennsla.is"><span class="icon-email-icon"></span></a>
+            <a href="tel:111111111111"><span class="icon-phone-icon"></span></a>
+        </div>
+    </footer>
+</body>
+
+</html>
